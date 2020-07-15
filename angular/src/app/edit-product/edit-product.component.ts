@@ -22,7 +22,10 @@ export class EditProductComponent implements OnInit {
   constructor(private productService:ProductService,private router:Router) { }
 
   ngOnInit(): void {
+
+    this.product = this.productService.hi();
   }
+
 
   Update()
     {
